@@ -1,13 +1,14 @@
 <html>
 
 <head>
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<h1> Calculator </h1>
+	<p> Calculator </p>
 	<div id = "calculator" >
 		<form>
-			<input type = "text" id = "screen" disabled>
+			<input type = "text" id = "screen" value = "0" disabled>
 			<br>
 			<input type = "button" id = "keys" value = "&#8592" onClick = "backspace()" >
 			<input type = "button" id = "keys" value = "C" onClick = "clearScreen()" >
@@ -25,20 +26,22 @@
 			<input type = "button" id = "keys" value = "5" onClick = 'addToScreen("5")' >
 			<input type = "button" id = "keys" value = "6" onClick = 'addToScreen("6")' >
 			<input type = "button" id = "keys" value = "*" onClick = 'addToScreen("*")' >
-			<input type = "button" id = "keys" value = "1/x" onClick = "reciproc()" >
+			<input type = "button" id = "keys" value = "1/X" onClick = "reciproc()" >
 			<br>
 			<input type = "button" id = "keys" value = "1" onClick = 'addToScreen("1")' >
 			<input type = "button" id = "keys" value = "2" onClick = 'addToScreen("2")' >
 			<input type = "button" id = "keys" value = "3" onClick = 'addToScreen("3")' >
 			<input type = "button" id = "keys" value = "-" onClick = 'addToScreen("-")' >
-			<input type = "button" id = "equalKey" value = "=" onClick = "equal()" >
-			<br>
-			<input type = "button" id = "zeroKey" value = "0" onClick = 'addToScreen("0")' >
-			<input type = "button" id = "keys" value = "." onClick = 'addToScreen(".")' >
 			<input type = "button" id = "keys" value = "+" onClick = 'addToScreen("+")' >
 			
+			<br>
+			<input type = "button" id = "largeKey" value = "0" onClick = 'addToScreen("0")' >
+			<input type = "button" id = "keys" value = "." onClick = 'addToScreen(".")' >
+			<input type = "button" id = "largeKey" value = "=" onClick = "equal()" >
+		
 		</form>
 	</div>
+	<script src="script.js"></script>
 </body>
 
 </html>
