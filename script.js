@@ -1,5 +1,20 @@
 
 var screen = document.getElementById('screen');
+var validKeys = ["+","-","*","/","."];
+document.addEventListener("keydown", keyFunction);
+
+function keyFunction(event) {
+    if(event.key == "Enter")
+		equal();
+	
+	if(event.key == "Backspace")
+		backspace();
+	
+	if((event.key >= '0' && event.key <= '9' ) || validKeys.indexOf(event.key) != -1)
+		addToScreen(event.key);
+	
+}
+	
 
 function backspace(){
 	var len = screen.value.length - 1;
